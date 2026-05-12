@@ -1,128 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="icon" type="image/x-icon" href="img/icone.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre Flores - Categorias em Destaque</title>
-    <title>Categoria</title>
+    <title>Categoria Css</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .body{
+        background-color: #ece3dd;
+    }
+    .cent{
+        text-align: right;  
+    }
+    .a img{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+    }
+    .menu{
+        padding: 1%;
+        text-align: center;
+        background-color: #e1b9a9;
+        height: 1%;
+        margin: 0px;
+        position: relative;
+    }
+
+    .botão{
+        text-decoration: none;
+        color: #ece3dd;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:#9d595c;
+    }
+    .botão:hover{
+        font-size: 18px;
+    }
+    a:hover{
+    text-decoration: none !important;
+}
+
+    .botao {
+  background-color: #a45c5c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+footer{
+    background-color: #ece3dd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    height: 550px;
+    
+
+}
+.item_cat{
+    background-color: #e1b9a9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.item_cat:hover{
+    height: 550px;
+    transition: height 0.5s ease;
+
+    
+}
+.item_cat button{
+    background-color: #9d595c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.titulo_md{
+    font-size: 36px;
+    font-family: "Ubuntu Sans Mono", monospace;
+    color: #81040a;
+    border-left: 5px solid #81040a;
+    text-indent: 30px;
+    text-align: center;
+
+}
+   </style>
 </head>
-
-<body>
+<body class="body">
     <header>
-        <table align="center">
-            <td>
-            <th>
-                <img src="img/titulo 3.png" width="100%">
+        <a href="index.html">
+            <img class="a img" src="img/logo tentativa.png">
+        </a>
+
+              <img class="cent" src="img/logo sem fundo 2 .png">
+        <div class="menu">
+            <div class="cent">
+            <table align="center" border="0" width="100%">
+                <td>
+                <th><a href="index.html" class="botão">HOME</a></th>
+                <th><a href="categoria.html" class="botão">CATEGORIAS EM DESTAQUE</a></th>
+                <th><a href="ocasiões.html" class="botão">OCASIÕES ESPECIAIS</a></th>
+                <th><a href="sig.html" class="botão">SIGNIFICADO DAS FLORES</a></th>
+                <th><a href="Depoimentos.html" class="botão">DEPOIMENTO DE CLIENTES</a></th>
+                <th><a href="sobrenós.html" class="botão">SOBRE NÓS</a></th>
                 </td>
-        </table>
-        <hr>
-        <table align="center" border="0" width="100%">
-            <td>
-            <th><a href="todasf.html">TODAS AS FLORES</a></th>
-            <th><a href="categoria.html">CATEGORIAS EM DESTAQUE</a></th>
-            <th><a href="ocasiões.html">OCASIÕES ESPECIAIS</a></th>
-            <th><a href="sig.html">SIGNIFICADO DAS FLORES</a></th>
-            <th><a href="Depoimentos.html">DEPOIMENTO DE CLIENTES</a></th>
-            <th><a href="sobrenós.html">SOBRE NÓS</a></th>
-            </td>
-        </table>
-        <hr>
+            </table>
+        </div>
     </header>
-    <main align="center">
-        <table align="center" border="1" width="100%">
-            <caption>
-                <h2>Buquês em destaque</h2>
-            </caption>
-            <td>
-            <th><img src="img/flor lirio.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$110,00</p>
-            </th>
-            <th><img src="img/girasol1.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$120,00</p>
-            </th>
-            <th><img src="img/rosa3.jpg" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$99,50</p>
-            </th>
-            <th><img src="img/tulipa1.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$100,00</p>
-            </th>
-            </td>
-        </table>
-        <table align="center" border="1" width="100%">
-            <caption>
-                <h2>Flores para Aniverário</h2>
-            </caption>
-            <td>
-            <th><img src="img/flores niver1.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$100,00</p>
-            </th>
-            <th><img src="img/niver2.png" width="200"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$120,00</p>
-            </th>
-            <th><img src="img/niverrrrrrrrrrrrr.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$110,00</p>
-            </th>
-            <th><img src="img/niver4.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                <p>R$85,90</p>
-            </th>
-            </td>
-            <table>
-                <table align="center" border="1" width="100%">
-                    <caption>
-                        <h2>Flores para Casamento</h2>
-                    </caption>
-                    <td>
-                    <th><img src="img/cas1.png" width="300">
-                        <p>R$210,00</p><a href="comprar.html"><button>Comprar</button></a>
-                    </th>
-                    <th><img src="img/cas2.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$180,00</p>
-                    </th>
-                    <th><img src="img/cas3.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$130,00</p>
-                    </th>
-                    <th><img src="img/cas4.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$160,00</p>
-                    </th>
-                    </td>
-                </table>
-                <table align="center" border="1" width="100%">
-                    <caption>
-                        <h2>Cestas Presenteáveis</h2>
-                    </caption>
-                    <td>
-                    <th><img src="img/c1.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$115,00</p>
-                    </th>
-                    <th><img src="img/c2.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$120,00</p>
-                    </th>
-                    <th><img src="img/c3.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$200,00</p>
-                    </th>
-                    <th><img src="img/c4.png" width="300"><a href="comprar.html"><button>Comprar</button></a>
-                        <p>R$150,00</p>
-                    </th>
-                </table>
-                </td>
+    <main>
+
+        <!--DAQUI-->
+        <div class="conteiner">
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+        </div>
+
+    <!--AQUI-->
 
 
+
+            <br>
+    <h1 class="titulo_md"> Escolha seu presente! </h1>
+
+
+            <!--DAQUI-->
+        <div class="conteiner">
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+            <div class="item_cat">
+                <img src="img/cp1.png" width="100%">
+                <h1>Buque de Flores</h1>
+                <button>Comprar</button>
+                <br><br>
+                <p>Buquê de flores é uma composição floral que reúne diversas flores e folhagens, arranjadas de forma harmoniosa e estética. Ele é frequentemente utilizado para presentear em ocasiões especiais, como aniversários, casamentos, Dia das Mães, entre outros. </p>
+            </div>
+
+        </div>
+
+    <!--AQUI-->
 
 
     </main>
-    <footer>
-        <table border="0" align="center">
-            <tr>
-                <td><img src="img/rodape2.png" width="150"></td>
-            </tr>
-        </table>
-        <p align="center"><i>Instagram: @entreflores_floricultura</i></p>
-        <p align="center"><i>WhatsApp: (14) 9978-9900</i></p>
-        <p align="center"><i>©2026 Entre Flores Floricultura. Todos os direitos reservados.</i></p>
-    </footer>
+
 </body>
-
-
 </html>
