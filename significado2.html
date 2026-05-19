@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Significado CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        background-color: #ece3dd;
+    }
+    .a{
+        text-decoration: none;
+    }
+    .cent{
+        text-align: right;  
+    }
+    .a img{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+    }
+    .menu{
+        padding: 1%;
+        text-align: center;
+        background-color: #e1b9a9;
+        height: 1%;
+        margin: 0px;
+        position: relative;
+    }
+
+    .botão{
+        text-decoration: none;
+        color: #ece3dd;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:#9d595c;
+    }
+    .botão:hover{
+        font-size: 18px;
+    }
+    a:hover{
+    text-decoration: none !important;
+}
+
+    .botao {
+  background-color: #a45c5c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+} header h1{
+      font-size: 42px;
+      color: #7a2946;
+      letter-spacing: 2px;
+    }
+
+    .container{
+      max-width: 1300px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .flores{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card{
+      background: white;
+      width: 300px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    }
+
+    .card img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card-content h2{
+      text-align: center;
+      color: #c2185b;
+      font-size: 26px;
+    }
+
+    .card-content p{
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer{
+      margin-top: 60px;
+      background: #c2185b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
+
+    @media(max-width: 768px){
+
+      header h1{
+        font-size: 30px;
+      }
+
+      .card{
+        width: 100%;
+      }
+
+      .card img{
+        height: 220px;
+      }
+    }
+    .rodape {
+     margin-top: 60px;
+    background-color: #ece3dd;
+    text-align: center;
+    padding: 5px 15px;
+    color: #9b6b6b;
+    font-family: Arial;
+}
+
+.rodape img {
+    width: 40%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rodape p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.rodape a {
+    color: #9b6b6b;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #81040a;
+}
+
+.rodape i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.rodape span {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+}
+  
+</style>
+</head>
+<body>
+    <body class="body">
+    <header>
+        <a href="index02.html">
+            <img class="a img" src="img/logo tentativa.png">
+        </a>
+              <img class="cent" src="img/logo sem fundo 2 .png">
+      
+        <div class="menu">
+            <div class="cent">
+            <table align="center" border="0" width="100%">
+                <td>
+                <th><a href="index02.html" class="botão">HOME</a></th>
+                <th><a href="ocasiões 2.html" class="botão">OCASIÕES ESPECIAIS</a></th>
+                <th><a href="significado2.html" class="botão">SIGNIFICADO DAS FLORES</a></th>
+                <th><a href="depoimento2.html" class="botão">DEPOIMENTO DE CLIENTES</a></th>
+                <th><a href="sobrenós2.html" class="botão">SOBRE NÓS</a></th>
+                </td>
+            </table>
+        </div>
+        <header>
+    <h1>Significado das Flores</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="flores">
+
+      <!-- Rosa Branca -->
+      <div class="card">
+        <img src="img/branca.jpg" alt="Rosa Branca">
+
+        <div class="card-content">
+          <h2>Rosa Branca</h2>
+
+          <p>
+            A rosa branca simboliza paz, pureza e respeito.
+            É muito escolhida para representar sinceridade,
+            novos começos e sentimentos verdadeiros.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rosa Vermelha -->
+      <div class="card">
+        <img src="img/rosa1.png" alt="Rosa Vermelha">
+
+        <div class="card-content">
+          <h2>Rosa Vermelha</h2>
+
+          <p>
+            A rosa vermelha é o maior símbolo do amor e da paixão.
+            Representa romantismo, desejo e intensidade emocional.
+          </p>
+        </div>
+      </div>
+
+      <!-- Girassol -->
+      <div class="card">
+        <img src="img/test gira1.png" alt="Girassol">
+
+        <div class="card-content">
+          <h2>Girassol</h2>
+
+          <p>
+            O girassol representa felicidade, energia positiva,
+            prosperidade e otimismo. Sua aparência vibrante
+            transmite alegria.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tulipa -->
+      <div class="card">
+        <img src="img/tulipa.jpg" alt="Tulipa">
+
+        <div class="card-content">
+          <h2>Tulipa</h2>
+
+          <p>
+            A tulipa simboliza amor verdadeiro, elegância
+            e sofisticação. Também está ligada à esperança
+            e renovação.
+          </p>
+        </div>
+      </div>
+
+      <!-- Margarida -->
+      <div class="card">
+        <img src="img/margarida.jpg" alt="Margarida">
+
+        <div class="card-content">
+          <h2>Margarida</h2>
+
+          <p>
+            A margarida representa inocência, pureza e simplicidade.
+            Sua delicadeza transmite leveza e sinceridade.
+          </p>
+        </div>
+      </div>
+
+      <!-- Lírio -->
+      <div class="card">
+        <img src="img/lirio.jpg" alt="Lírio">
+
+        <div class="card-content">
+          <h2>Lírio</h2>
+
+          <p>
+            O lírio simboliza paz, espiritualidade e renovação.
+            É muito utilizado para representar respeito
+            e sentimentos profundos.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+<footer class="rodape">
+    <img src="img/logo sem fundo 2 .png" alt="Entre Flores Logo">
+    <p>
+         <a href="https://wa.me/5514997899900" target="_blank">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-whatsapp"></i> (14) 9978-9900
+        </a>
+    </p>
+    <p>
+        <a href="https://instagram.com/entreflores_floricultura" target="_blank">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-instagram"></i> @entreflores_floricultura
+        </a>
+    </p>
+    <span>©2026 Entre Flores Floricultura. Todos os direitos reservados.</span>
+</footer>
+</body>
+</html>

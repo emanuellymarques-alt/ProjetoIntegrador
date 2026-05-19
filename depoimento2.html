@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimento CSS</title>
+    <style>
+ *{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        background-color: #ece3dd;
+    }
+    .a{
+        text-decoration: none;
+    }
+    .cent{
+        text-align: right;  
+    }
+    .a img{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+    }
+    .menu{
+        padding: 1%;
+        text-align: center;
+        background-color: #e1b9a9;
+        height: 1%;
+        margin: 0px;
+        position: relative;
+    }
+
+    .botão{
+        text-decoration: none;
+        color: #ece3dd;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:#9d595c;
+    }
+    .botão:hover{
+        font-size: 18px;
+    }
+    a:hover{
+    text-decoration: none !important;
+}
+
+    .botao {
+  background-color: #a45c5c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+footer{
+    background-color: #ece3dd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.banner img{
+    
+   margin-top: 0px;
+}
+      
+        .container{
+            max-width:1300px;
+            margin:auto;
+        }
+
+        /* CARDS */
+
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:20px;
+            padding:25px;
+            text-align:center;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card img{
+            width:130px;
+            height:130px;
+            object-fit:cover;
+            border-radius:50%;
+            border:5px solid #ffd6e7;
+            margin-bottom:15px;
+        }
+
+        .card h2{
+            font-size:22px;
+            color:#c2185b;
+            margin-bottom:10px;
+        }
+
+        .stars{
+            color:#ffb400;
+            font-size:26px;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            font-size:15px;
+            line-height:1.7;
+            color:#555;
+        }
+
+        /* SUGESTÕES */
+
+        .sugestoes{
+            margin-top:70px;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+            text-align:center;
+        }
+
+        .sugestoes h2{
+            font-size:40px;
+            color:#d63384;
+            margin-bottom:15px;
+        }
+
+        .sugestoes p{
+            margin-bottom:25px;
+            color:#666;
+        }
+
+        textarea{
+            width:100%;
+            max-width:700px;
+            height:180px;
+            border:none;
+            border-radius:15px;
+            padding:20px;
+            resize:none;/*Impede que o usuário redimensione o campo manualmente*/
+            background:#fff4f8;
+            font-size:16px;
+            outline:none; /*Remove a borda de foco padrão do navegador quando o elemento é clicado/selecionado.*/
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);/*Adiciona uma sombra interna suave.*/
+        }
+
+        button{
+            margin-top:20px;
+            padding:14px 35px;
+            border:none;
+            border-radius:50px;
+            background:#d63384;
+            color:white;
+            font-size:16px;
+            cursor:pointer; 
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#b0256d;
+            transform:scale(1.05);
+        }
+
+        /* RESPONSIVO */
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:36px;
+            }
+
+            .sugestoes h2{
+                font-size:32px;
+            }
+
+        }.rodape {
+     margin-top: 60px;
+    background-color: #ece3dd;
+    text-align: center;
+    padding: 5px 15px;
+    color: #9b6b6b;
+    font-family: Arial;
+}
+
+.rodape img {
+    width: 40%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rodape p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.rodape a {
+    color: #9b6b6b;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #81040a;
+}
+
+.rodape i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.rodape span {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+    </style>
+</head>
+<body>
+     <body class="body">
+    <header>
+        <a href="index02.html">
+            <img class="a img" src="img/logo tentativa.png">
+        </a>
+              <img class="cent" src="img/logo sem fundo 2 .png">
+      
+        <div class="menu">
+            <div class="cent">
+            <table align="center" border="0" width="100%">
+                <td>
+                <th><a href="index02.html" class="botão">HOME</a></th>
+                <th><a href="ocasiões 2.html" class="botão">OCASIÕES ESPECIAIS</a></th>
+                <th><a href="significado2.html" class="botão">SIGNIFICADO DAS FLORES</a></th>
+                <th><a href="depoimento2.html" class="botão">DEPOIMENTO DE CLIENTES</a></th>
+                <th><a href="sobrenós2.html" class="botão">SOBRE NÓS</a></th>
+                </td>
+            </table>
+        </div>
+    </div>
+     <div class="container">
+
+        <h1>🌸 Depoimentos dos Clientes 🌸</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="img/cliente2.jpg" alt="">
+                <h2>Rafael S.</h2>
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Escolhi um buquê de rosas e fiquei impressionada com o capricho.
+                    As flores estavam extremamente frescas e a entrega foi perfeita.
+                    Minha mãe ficou emocionada ao receber!
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/cliente1.jpg" alt="">
+                <h2>Rita R.</h2>
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Precisei comprar flores de última hora e tive uma experiência excelente.
+                    O site é muito fácil de navegar e o atendimento foi impecável.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/cliente3.jpg" alt="">
+                <h2>Fernanda L.</h2>
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Sou apaixonada por flores e adorei a qualidade dos arranjos.
+                    As tulipas duraram muitos dias e estavam lindas.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/cliente4.jpg" alt="">
+                <h2>Juliana M.</h2>
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    O arranjo de girassóis ficou maravilhoso!
+                    A apresentação transmitia alegria e carinho em cada detalhe.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/cliente5.jpg" alt="">
+                <h2>Roberto A.</h2>
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Já comprei várias vezes nessa loja e sempre tive ótimas experiências.
+                    Entrega pontual, flores lindas e excelente atendimento.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- CAIXA DE SUGESTÕES -->
+
+        <div class="sugestoes">
+
+            <h2>💌 Caixa de Sugestões</h2>
+
+            <p>
+                Deixe seu elogio, crítica ou sugestão abaixo.
+                Sua opinião é muito importante para nós!
+            </p>
+
+            <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+
+            <br>
+            <button>Enviar Sugestão</button>
+        </div>
+        </div>
+        <footer class="rodape">
+    <img src="img/logo sem fundo 2 .png" alt="Entre Flores Logo">
+    <p>
+         <a href="https://wa.me/5514997899900" target="_blank">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-whatsapp"></i> (14) 9978-9900
+        </a>
+    </p>
+    <p>
+        <a href="https://instagram.com/entreflores_floricultura" target="_blank">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-instagram"></i> @entreflores_floricultura
+        </a>
+    </p>
+    <span>©2026 Entre Flores Floricultura. Todos os direitos reservados.</span>
+</footer>
+</body>
+</html>
