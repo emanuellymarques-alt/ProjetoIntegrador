@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+*{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        background-color: #ece3dd;
+    }
+    .a{
+        text-decoration: none;
+    }
+    .cent{
+        text-align: right;  
+    }
+    .a img{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+    }
+    .menu{
+        padding: 1%;
+        text-align: center;
+        background-color: #e1b9a9;
+        height: 1%;
+        margin: 0px;
+        position: relative;
+    }
+
+    .botão{
+        text-decoration: none;
+        color: #ece3dd;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:#9d595c;
+    }
+    .botão:hover{
+        font-size: 18px;
+    }
+    a:hover{
+    text-decoration: none !important;
+}
+
+    .botao {
+  background-color: #a45c5c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+footer{
+    background-color: #ece3dd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.banner img{
+    
+   margin-top: 0px;
+}
+.rodape {
+     margin-top: 60px;
+    background-color: #ece3dd;
+    text-align: center;
+    padding: 5px 15px;
+    color: #9b6b6b;
+    font-family: Arial;
+}
+
+.rodape img {
+    width: 40%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rodape p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.rodape a {
+    color: #9b6b6b;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #81040a;
+}
+
+.rodape i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.rodape span {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 24px 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5a1a1a;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #5a1a1a;
+    margin: 28px 0 8px;
+}
+
+.section-text {
+    text-align: center;
+    font-size: 0.97rem;
+    color: #6b2020;
+    line-height: 1.75;
+    max-width: 820px;
+    margin: 0 auto 10px;
+}
+
+hr.divider {
+    border: none;
+    border-top: 1.5px solid #e8b4b8;
+    margin: 0;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #d4a0a8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 18px 0 32px;
+    background: #fff8f5;
+}
+
+.timeline-item {
+    border-right: 1.5px solid #d4a0a8;
+    padding: 18px 12px 14px;
+    text-align: center;
+    background: #fff8f5;
+}
+
+.timeline-item:last-child {
+    border-right: none;
+}
+
+.timeline-item img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.timeline-item p {
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: #5a1a1a;
+}
+
+.why-section {
+    background: #fff8f5;
+    border: 1.5px solid #e8b4b8;
+    border-radius: 10px;
+    padding: 28px 36px;
+    margin: 10px 0 32px;
+}
+
+.why-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 40px;
+}
+
+.why-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.why-list h3 {
+    font-size: 1rem;
+    color: #7a1a2e;
+    margin-bottom: 2px;
+}
+
+.why-list p {
+    font-size: 0.92rem;
+    color: #6b2020;
+    line-height: 1.6;
+}
+
+.thanks-box {
+    background: #fff0f3;
+    border-left: 4px solid #c0395a;
+    border-radius: 6px;
+    padding: 20px 28px;
+    margin: 10px 0 28px;
+}
+
+.thanks-box p {
+    font-size: 0.97rem;
+    color: #5a1a1a;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.quote-block {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.08rem;
+    color: #9e2a4a;
+    padding: 18px 0 24px;
+}
+
+.quote-block::before {
+    content: '"';
+    font-size: 2rem;
+    color: #e8b4b8;
+    vertical-align: -0.3em;
+    margin-right: 4px;
+}
+
+.quote-block::after {
+    content: '"';
+    font-size: 2rem;
+    color: #e8b4b8;
+    vertical-align: -0.3em;
+    margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+    .timeline-grid { grid-template-columns: 1fr 1fr; }
+    .timeline-item:nth-child(2) { border-right: none; }
+    .timeline-item:nth-child(1),
+    .timeline-item:nth-child(2) { border-bottom: 1.5px solid #d4a0a8; }
+    .why-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .timeline-grid { grid-template-columns: 1fr; }
+    .timeline-item { border-right: none; border-bottom: 1.5px solid #d4a0a8; }
+    .timeline-item:last-child { border-bottom: none; }
+}
+    </style>
+</head>
+<body>
+    <body class="body">
+    <header>
+        <a href="index02.html">
+            <img class="a img" src="img/logo tentativa.png">
+        </a>
+              <img class="cent" src="img/logo sem fundo 2 .png">
+      
+        <div class="menu">
+            <div class="cent">
+            <table align="center" border="0" width="100%">
+                <td>
+                <th><a href="index02.html" class="botão">HOME</a></th>
+                <th><a href="ocasiões 2.html" class="botão">OCASIÕES ESPECIAIS</a></th>
+                <th><a href="sig.html" class="botão">SIGNIFICADO DAS FLORES</a></th>
+                <th><a href="Depoimentos.html" class="botão">DEPOIMENTO DE CLIENTES</a></th>
+                <th><a href="sobrenós.html" class="botão">SOBRE NÓS</a></th>
+                </td>
+            </table>
+        </div>
+    </div>
+
+<main>
+
+    <h1 class="section-title">Onde tudo começou:</h1>
+    <hr class="divider">
+    <p class="section-text" style="margin-top:16px;">
+        Antes de se tornar uma floricultura, este espaço era apenas um local em construção e um sonho começando a
+        ganhar forma. Foi ali que surgiu a ideia de criar um lugar dedicado às flores e aos sentimentos que elas
+        representam. Com dedicação e carinho em cada detalhe, transformamos esse sonho em realidade. Hoje, nossa
+        missão é levar beleza, emoção e momentos especiais através de cada flor. 🌸
+    </p>
+    <hr class="divider" style="margin: 24px 0;">
+
+    <h2 class="section-subtitle">Do sonho a realidade 🌸</h2>
+    <p class="section-text">
+        Cada parede levantada representava um passo mais perto de transformar um sonho em realidade.
+        Hoje nossa floricultura existe para espalhar beleza, carinho e momentos especiais.
+    </p>
+    <hr class="divider" style="margin: 24px 0;">
+
+    <h2 class="section-subtitle">Linha do tempo:</h2>
+    <div class="timeline-grid">
+        <div class="timeline-item">
+            <img src="img/ld1.png" alt="Início da construção">
+            <p>2023 – Início da construção</p>
+        </div>
+        <div class="timeline-item">
+            <img src="img/ldt2.png" alt="Estrutura tomando forma">
+            <p>2024 – Estrutura tomando forma</p>
+        </div>
+        <div class="timeline-item">
+            <img src="img/ldt3.png" alt="Floricultura em funcionamento">
+            <p>2025 – Floricultura em funcionamento</p>
+        </div>
+        <div class="timeline-item">
+            <img src="img/ldt4.png" alt="Espalhando flores e emoções">
+            <p>Hoje – Espalhando flores e emoções</p>
+        </div>
+    </div>
+
+    <h2 class="section-subtitle">Por que escolher nossa floricultura?</h2>
+    <div class="why-section">
+        <ul class="why-list">
+            <li>
+                <h3>🌸 Flores selecionadas:</h3>
+                <p>Escolhemos flores frescas e de qualidade para garantir arranjos bonitos e duradouros.</p>
+            </li>
+            <li>
+                <h3>🌸 Atendimento personalizado:</h3>
+                <p>Nossa equipe está pronta para ajudar a escolher as flores perfeitas para cada ocasião.</p>
+            </li>
+            <li>
+                <h3>💐 Arranjos feitos com carinho:</h3>
+                <p>Cada buquê é preparado com atenção aos detalhes.</p>
+            </li>
+            <li>
+                <h3>🚚 Entrega cuidadosa:</h3>
+                <p>Nos preocupamos para que cada pedido chegue perfeito até você.</p>
+            </li>
+        </ul>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="section-subtitle">💌 Nosso agradecimento:</h2>
+    <div class="thanks-box">
+        <p>
+            Agradecemos a todos os clientes que confiam em nosso trabalho e permitem que nossas flores façam
+            parte de momentos especiais. Cada pedido e cada visita ao nosso site fazem parte da nossa história
+            e nos motivam a continuar espalhando beleza e emoção através das flores.
+        </p>
+    </div>
+
+    <hr class="divider" style="margin-bottom: 24px;">
+
+    <div class="quote-block">
+        Flores não são apenas presentes, são sentimentos transformados em beleza.
+    </div>
+
+</main>
+
+
+
+
+    <footer class="rodape">
+    <img src="img/logo sem fundo 2 .png" alt="Entre Flores Logo">
+    <p>
+         <a href="https://wa.me/5514997899900" target="_blank">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-whatsapp"></i> (14) 9978-9900
+        </a>
+    </p>
+    <p>
+        <a href="https://instagram.com/entreflores_floricultura" target="_blank">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <i class="fa-brands fa-instagram"></i> @entreflores_floricultura
+        </a>
+    </p>
+    <span>©2026 Entre Flores Floricultura. Todos os direitos reservados.</span>
+</footer>
+    
+</body>
+</html>
