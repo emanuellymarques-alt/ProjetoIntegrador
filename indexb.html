@@ -52,8 +52,8 @@
         /*escrita das páginas*/
         .menu a {
             color: #000;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
             /* ou 500 */
             font-size: 15px;
 
@@ -100,24 +100,14 @@
     object-position: center;
 }
 
-.icone-card {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
 
-    width: 70px;
-    
-
-    background: white;
-    border-radius: 50%;
-    padding: 12px;
-}
 .card {
     border-radius: 15px;
     overflow: hidden;
     width: 70%;
 }
+
+
 .h3{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -125,6 +115,29 @@
 .h5{
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Efeito de Hover nos Cards */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 70%;
+    /* Adicione a linha abaixo para suavizar o movimento */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* O que acontece quando passa o mouse no card */
+.card:hover {
+    transform: translateY(-10px); /* Faz o card subir um pouco */
+    cursor: pointer; /* Transforma a seta do mouse na mãozinha de clique */
+}
+
+/* Opcional: Faz o texto do card mudar para a cor do seu tema no hover */
+.card:hover .h5 {
+    color: #8B3E4d; 
+    transition: color 0.3s ease;
+}
+
+
 
     </style>
 </head>
