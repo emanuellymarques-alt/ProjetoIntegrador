@@ -93,32 +93,35 @@
 
 
 
-        .pesquisa {
+     .pesquisa{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
-.pesquisa button {
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-#campoPesquisa {
-    width: 0;
-    opacity: 0;
-    padding: 8px;
-    border: 1px solid #ccc;
+#campoPesquisa{
+    display: none;
+    width: 180px;
+    height: 36px;
+    padding: 0 12px;
+    border: 2px solid #222;
     border-radius: 20px;
-    transition: 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
-/* Quando a pesquisa estiver aberta */
-#campoPesquisa.ativa {
-    width: 200px;
-    opacity: 1;
+
+
+#btnPesquisa{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#btnPesquisa img{
+    width: 30px;
+    height: 30px;
 }
     </style>
 </head>
@@ -135,8 +138,14 @@
             <a href="significado2.html">SIGNIFICADO DAS FLORES</a>
             <a href="depoimento2.html">DEPOIMENTOS</a>
             <a href="sobrenós2.html">SOBRE NÓS</a>
-            <img src="img/lupaIcon.png" alt="Pesquisa">
-            <img src="img/carrinho-de-compras.png" alt="Carrinho">
+            <div class="pesquisa">
+    <button id="btnPesquisa" type="button">
+        <img src="img/lupaIcon.png" alt="Pesquisar">
+    </button>
+
+    <input type="text"  id="campoPesquisa" placeholder="Pesquisar flores...">
+</div>
+            
         </nav>
     </header>
     <!-- Botão Flutuante do Carrinho -->
@@ -148,92 +157,17 @@
             0
         </span>
     </button>
- <!-- LUPINHA PRA PESQUISAR!! -->
-    <div class="pesquisa">
-    <button id="btnPesquisa" aria-label="Pesquisar">
-        🔍
-    </button>
-
-    <input 
-        type="text" 
-        id="campoPesquisa" 
-        placeholder="Pesquisar flores..."
-    >
-</div>
- <!-- LUPINHA PRA PESQUISAR!! -->
+ 
     <section>
-        <!-- Catálogo de Produtos -->
-        <div class="container my-3">
-            <h1 class="titulo-secao fw-bold">Escolha seu presente!</h1>
-        </div>
-
-        <div class="menu_down my-3">
-            <div class="item_down">
-                <a href="buque-de-rosas.html"> <a href="ocasiões 2.html"><img src="img/ddm2.png"> </a></a>
-
-                <h3>Dia das Mães</h3>
-            </div>
-            <div class="item_down">
-                <a href="buque-de-rosas.html"> <a href="ocasiões 2.html"><img src="img/ddn1.png"> </a></a>
-
-                <h3>Dia dos namorados</h3>
-            </div>
-
-            <div class="item_down">
-                <a href="buque-de-rosas.html"> <a href="ocasiões 2.html"><img src="img/a44.png"> </a></a>
-
-                <h3>Aniversários</h3>
-            </div>
-
-            <div class="item_down">
-                <a href="buque-de-rosas.html"> <a href="ocasiões 2.html"><img src="img/expe01.png"> </a></a>
-
-                <h3>Formatura</h3>
-            </div>
-
-            <div class="item_down">
-                <a href="buque-de-rosas.html"> <a href="ocasiões 2.html"><img src="img/c1.png"> </a></a>
-                <h3>Cestas Presenteaveis</h3>
-            </div>
+       
 
         </div>
     </section>
-<script>
-    const btnPesquisa = document.getElementById("btnPesquisa");
-const campoPesquisa = document.getElementById("campoPesquisa");
 
-btnPesquisa.addEventListener("click", function () {
-    campoPesquisa.classList.toggle("ativa");
-
-    if (campoPesquisa.classList.contains("ativa")) {
-        campoPesquisa.focus();
-    }
-});
-
-campoPesquisa.addEventListener("input", function () {
-
-    const pesquisa = campoPesquisa.value.toLowerCase();
-
-    const produtos = document.querySelectorAll(".card");
-
-    produtos.forEach(function (produto) {
-
-        const texto = produto.textContent.toLowerCase();
-
-        if (texto.includes(pesquisa)) {
-            produto.style.display = "";
-        } else {
-            produto.style.display = "none";
-        }
-
-    });
-
-});
-</script>
     <section>
         <!-- Catálogo de Produtos -->
         <div class="container my-3">
-            <h1 class="titulo-secao fw-bold">Escolha seu presente!</h1>
+         
 
             <!-- Estrutura do Carrossel -->
             <div id="carrosselProdutos" class="carousel slide" data-bs-ride="false">
@@ -258,28 +192,7 @@ campoPesquisa.addEventListener("input", function () {
         </div>
     </section>
 
-    <section>
-
-        <footer class="rodape">
-            <img src="img/logo sem fundo 2 .png" alt="Entre Flores Logo">
-            <p>
-                <a href="https://wa.me/5514997899900" target="_blank">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-                    <i class="fa-brands fa-whatsapp"></i> (14) 9978-9900
-                </a>
-            </p>
-            <p>
-                <a href="https://instagram.com/entreflores_floricultura" target="_blank">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-                    <i class="fa-brands fa-instagram"></i> @entreflores_floricultura
-                </a>
-            </p>
-            <span>©2026 Entre Flores Floricultura. Todos os direitos reservados.</span>
-        </footer>
-
-    </section>
+   
 
     <!-- Offcanvas do Carrinho -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoOffcanvas" style="min-width: 350px;">
@@ -325,7 +238,7 @@ campoPesquisa.addEventListener("input", function () {
 
                 <button class="btn btn-ef w-100 btn-lg" onclick="finalizarCompra()">Finalizar Compra</button>
             </div>
-        </div>
+        </div>  
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
@@ -333,6 +246,19 @@ campoPesquisa.addEventListener("input", function () {
 
     <!-- Lógica do Carrinho -->
     <script type="text/javascript" src="script.js"></script>
+    <script>
+const btn = document.getElementById("btnPesquisa");
+const campo = document.getElementById("campoPesquisa");
+
+btn.onclick = function () {
+    if (campo.style.display === "block") {
+        campo.style.display = "none";
+    } else {
+        campo.style.display = "block";
+        campo.focus();
+    }
+};
+</script>
 
 </body>
 </html>
