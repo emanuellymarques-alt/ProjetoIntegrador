@@ -65,59 +65,59 @@ const produtos = [
 const produtos2 = [
   {
     id: 13,
-    nome: 'Buquê Doze Razões',
+    nome: 'Cesta Promessa Rubi',
     preco: 149.90,
-    img: 'img/rosa5.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais selecionadas, folhagens de eucalipto e laço special de cetim branco.'
+    img: 'img/cesta1.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais, urso de pelúcia, chocolates selecionados, folhagens verdes e cesta decorativa com acabamento refinado.'
   },
   {
     id: 14,
-    nome: 'Buquê Jardim de Afeto',
+    nome: 'Cesta Doçura Celestial',
     preco: 119.90,
-    img: 'img/rosa2.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas coloridas (vermelhas, rosa e brancas), gipsofila, papel kraft e laço de cetim.'
+    img: 'img/cesta2.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas naturais, chocolates Ferrero Rocher, folhagens verdes e cesta decorativa com laço especial.'
   },
   {
     id: 15,
-    nome: 'Buquê Paixão Carmesim',
+    nome: 'Cesta Majestosa',
     preco: 95.00,
-    img: 'img/rosa3.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
+    img: 'img/cesta4.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong>Arranjo floral natural, chocolates selecionados, folhagens verdes e cesta decorativa com laço especial'
   },
   {
     id: 16,
-    nome: 'Buquê Sinfonia de Tons',
+    nome: 'Cesta Aurora Serena',
     preco: 160.00,
-    img: 'img/rosa4.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
+    img: 'img/cesta5.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Flores naturais, chocolates, biscoitos, suco, café e cesta decorativa com acabamento refinado.'
   },
   {
     id: 17,
-    nome: 'Buquê Doze Razões',
+    nome: 'Cesta Eterno Abraço',
     preco: 190,
-    img: 'img/cas1.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais selecionadas, folhagens de eucalipto e laço especial de cetim branco.'
+    img: 'img/cesta6.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> Urso de pelúcia, chocolates selecionados, e cesta decorativa com laço especial.'
   },
   {
     id: 18,
-    nome: 'Buquê Jardim de Afeto',
+    nome: 'Cesta Reserva de Safira',
     preco: 119.90,
-    img: 'img/cas2.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas coloridas (vermelhas, rosa e brancas), gipsofila, papel kraft e laço de cetim.'
+    img: 'img/cesta7.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Orquídea natural, vinho especial, chocolates selecionados, folhagens ornamentais e cesta decorativa com acabamento refinado.'
   },
   {
     id: 19,
-    nome: 'Buquê Paixão Carmesim',
+    nome: 'Cesta Brisa Dourada',
     preco: 95.00,
-    img: 'img/cas3.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
+    img: 'img/ddm1 test.png',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> Arranjo de flores secas naturais, bolo de chocolate, geleia artesanal, biscoitos amanteigados, torradas, suco especial e cesta de vime com acabamento refinado em laço de cetim.'
   },
   {
     id: 20,
-    nome: 'Buquê Sinfonia de Tons',
+    nome: 'Rosas e Vinho Premium',
     preco: 160.00,
-    img: 'img/cas4.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
+    img: 'img/c4.png',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Combinação de vinho, rosas vermelhas e chocolates, envolvida com embalagem elegante e cesta.'
   }
 
 
@@ -127,38 +127,38 @@ const produtos2 = [
 const produtos3 = [
   {
     id: 21,
-    nome: 'Buquê Doze Razões',
+    nome: 'Buquê Horizonte Azul',
     preco: 149.90,
-    img: 'img/rosa5.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais selecionadas, folhagens de eucalipto e laço special de cetim branco.'
+    img: 'img/casamento1.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> Hortênsias brancas e azul-claro, eucalipto fresco e acabamento refinado com laço especial.'
   },
   {
     id: 22,
-    nome: 'Buquê Jardim de Afeto',
+    nome: 'Buquê Ametista Nupcial',
     preco: 119.90,
-    img: 'img/rosa2.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas coloridas (vermelhas, rosa e brancas), gipsofila, papel kraft e laço de cetim.'
+    img: 'img/casamento2.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Lisianthus e rosas em tons de lilás e roxo, folhagens delicadas e acabamento elegante com laço de cetim.'
   },
   {
     id: 23,
-    nome: 'Buquê Paixão Carmesim',
+    nome: 'Buquê Promessa Branca',
     preco: 95.00,
-    img: 'img/rosa3.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
+    img: 'img/casamento3.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong>Rosas brancas naturais, mosquitinho fresco, folhagens verdes e acabamento clássico com laço especial.'
   },
   {
     id: 24,
-    nome: 'Buquê Sinfonia de Tons',
+    nome: 'Buquê Pérola Imperial',
     preco: 160.00,
-    img: 'img/rosa4.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
+    img: 'img/casamento5.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Orquídeas brancas naturais, folhagens elegantes e acabamento luxuoso com laço de cetim refinado.'
   },
   {
     id: 25,
-    nome: 'Buquê Doze Razões',
+    nome: 'Buquê Memórias Eternas',
     preco: 190,
     img: 'img/cas1.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais selecionadas, folhagens de eucalipto e laço special de cetim branco.'
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> Rosas brancas naturais selecionadas, folhagens verdes e acabamento delicado.'
   },
   {
     id: 26,
@@ -176,10 +176,10 @@ const produtos3 = [
   },
   {
     id: 28,
-    nome: 'Buquê Sinfonia de Tons',
+    nome: 'Buquê Harmonia Branca',
     preco: 160.00,
     img: 'img/cas4.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Rosas brancas naturais, astromélias brancas, folhagens verdes e acabamento com laço em fita.'
   }
 
 
