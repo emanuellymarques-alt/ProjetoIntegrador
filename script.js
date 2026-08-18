@@ -69,12 +69,12 @@ const produtos = [
     id: 11, 
     nome: 'Paixão Carmesim', 
     preco: 95.00, 
-    img: 'img/gira2.png',
+    img: 'img/gira1.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
   },
   { 
     id: 12, 
-    nome: 'Sinfonia de Tons', 
+    nome: 'Sinfonia de Tons Pastéis', 
     preco: 160.00, 
     img: 'img/tulipa.jpg',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
