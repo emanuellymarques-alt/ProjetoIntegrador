@@ -31,7 +31,7 @@
         }
 
 .card-produto {
-  background-color: #F7EFE9;
+  background-color: #F7EFE9; <-- cor dos cards!!> 
   border: none;
   border-radius: 12px;
   max-height: 360px; /* Altura inicial onde o texto fica escondido */
@@ -52,12 +52,12 @@
 }
 
 .card-produto .card-title {
-  color: #81040a;
+  color: #81040a; <-- letra dos cards!!> 
   font-size: 1.1rem;
 }
 
 .card-produto .preco {
-  color: #81040a;
+  color: #81040a;  <-- letra dos cards!!> 
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -72,7 +72,7 @@
 
         /* Botões Padrão */
         .btn-ef {
-            background-color: #9d595c;
+            background-color: #81040a;
             color: #F7EFE9;
             border: none;
             border-radius: 20px;
@@ -83,7 +83,7 @@
         }
 
         .btn-ef:hover {
-            background-color: #F7EFE9;
+            background-color: #9d595c;
             color: #ffffff;
         }
 
