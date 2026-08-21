@@ -120,7 +120,49 @@
         }
 
 
+/* CARDS DE SIGNIFICADO */
 
+.card {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+/* TODAS AS FOTOS NO MESMO TAMANHO */
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* TÍTULO */
+
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #000000;
+}
+
+
+/* TEXTO */
+
+.card-text {
+    font-size: 14px;
+    color: #010101;
+}
+
+
+/* HOVER */
+
+.card:hover {
+    background-color: #ba6475;
+    transform: translateY(-5px);
+}
 
 
 
@@ -224,7 +266,10 @@
     font-size: 14px;
 }
 
-
+ .h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
 
 
 
@@ -237,11 +282,11 @@
             <img src="img/logo_floricultura-removebg-preview.png" class="logo" alt="Logo">
         </a>
         <nav class="menu">
-            <a href="index02.html">HOME</a>
-            <a href="categorias2.html">CATEGORIAS</a>
-            <a href="significado2.html">SIGNIFICADO DAS FLORES</a>
-            <a href="depoimento2.html">DEPOIMENTOS</a>
-            <a href="sobrenós2.html">SOBRE NÓS</a>
+            <a href="index.html">HOME</a>
+            <a href="ocasioes.html">CATEGORIAS</a>
+            <a href="significadoatual.html">SIGNIFICADO DAS FLORES</a>
+            <a href="depoimento.html">DEPOIMENTOS</a>
+            <a href="sobrenos.html">SOBRE NÓS</a>
             <div class="pesquisa">
                 <button id="btnPesquisa" type="button">
                     <img src="img/lupaIcon.png" alt="Pesquisar">
@@ -258,10 +303,13 @@
 
     <div class="row g-4 justify-content-center">
 
+<h1 class="h1">Significados das Flores</h1>
+
+
         <!-- CARD 1 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Rosa vermelha">
+                <img src="img/sig1.png" class="card-img-top" alt="Rosa vermelha">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Rosa Vermelha</h5>
@@ -278,7 +326,7 @@
         <!-- CARD 2 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Flor">
+                <img src="img/sig2.png" class="card-img-top" alt="Flor">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Girassol</h5>
@@ -296,7 +344,7 @@
         <!-- CARD 3 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Flor">
+                <img src="img/sig3.png" class="card-img-top" alt="Flor">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Tulipa</h5>
@@ -314,7 +362,7 @@
         <!-- CARD 4 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Flor">
+                <img src="img/sig4.png" class="card-img-top" alt="Flor">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Margarida</h5>
@@ -331,7 +379,7 @@
         <!-- CARD 5 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Flor">
+                <img src="img/sig5.png" class="card-img-top" alt="Flor">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Lírio</h5>
@@ -349,7 +397,7 @@
         <!-- CARD 6 -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0">
-                <img src="img/rosa1.png" class="card-img-top" alt="Flor">
+                <img src="img/sig6.png" class="card-img-top" alt="Flor">
 
                 <div class="card-body text-center">
                     <h5 class="card-title">Tulipa</h5>
@@ -367,20 +415,98 @@
 
 </div>
 
+<footer class="rodape">
+
+    <div class="rodape-conteudo">
+
+        <!-- LOGO E REDES SOCIAIS -->
+        <div class="rodape-logo">
+
+            <img src="img/logo_floricultura-removebg-preview.png"
+                 alt="Entre Flores Floricultura">
+
+            <p>
+                Flores que transformam momentos<br>
+                em memórias especiais.
+            </p>
+
+            <div class="redes">
+
+                <a href="https://instagram.com/entreflores_floricultura"
+                   target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/5514997899900"
+                   target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
 
 
+        <!-- CONTATO -->
+        <div class="contato-footer">
+
+            <h3>FALE CONOSCO</h3>
+
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                (14) 9978-9900
+            </p>
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                contato@entreflores.com.br
+            </p>
+
+            <p>
+                <i class="fa-regular fa-clock"></i>
+                Seg. à Sex. — 8h às 18h
+            </p>
+
+        </div>
+
+    </div>
 
 
+    <!-- PARTE INFERIOR -->
+    <div class="rodape-final">
 
+        <span>
+            © 2026 Entre Flores Floricultura.
+            Todos os direitos reservados.
+        </span>
 
+        <span class="pagamento">
+            <i class="fa-solid fa-lock"></i>
+            Pagamento seguro
+        </span>
 
+    </div>
 
+</footer>
+<script>
 
+renderizarProdutos();
+renderizarProdutos2();
+renderizarProdutos3();
 
+const pesquisa = document.getElementById("campoPesquisa");
 
+pesquisa.addEventListener("input", function () {
+  const texto = this.value.toLowerCase().trim();
 
+  const filtrados = todosProdutos.filter(produto =>
+    produto.nome.toLowerCase().includes(texto)
+  );
 
+  renderizarProdutos(filtrados);
+});
 
+</script>
 
 </body>
 </html>
