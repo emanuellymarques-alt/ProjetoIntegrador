@@ -162,17 +162,17 @@ const produtos3 = [
   },
   {
     id: 26,
-    nome: 'Buquê Jardim de Afeto',
+    nome: 'Buquê Brisa de Hortênsias',
     preco: 119.90,
-    img: 'img/cas2.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas coloridas (vermelhas, rosa e brancas), gipsofila, papel kraft e laço de cetim.'
+    img: 'img/casamento06.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Elegância Nupcial<br><strong>Itens:</strong> Hortênsias brancas, rosas brancas, folhagens verdes e laço de cetim branco.'
   },
   {
     id: 27,
-    nome: 'Buquê Paixão Carmesim',
+    nome: 'Buquê Romance',
     preco: 95.00,
-    img: 'img/cas3.png',
-    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
+    img: 'img/casamento07.jpg',
+    descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Elegância Nupcial <br><strong>Itens:</strong> Rosas champagne, eucalipto, folhagens naturais e laço de cetim champagne.'
   },
   {
     id: 28,
