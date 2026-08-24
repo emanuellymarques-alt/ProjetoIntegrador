@@ -127,24 +127,291 @@
 
         .h1{
             font-family: 'Times New Roman', Times, serif;
-            color: #8B3E4d;
+            color: #81040a;
         }
+
+        .banner {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+      /* =========================================
+   RESPONSIVIDADE DO SITE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== PÁGINA ===== */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ===== HEADER ===== */
+
+    .header {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== LOGO ===== */
+
+    .logo {
+        width: 190px;
+        max-width: 80%;
+        height: auto;
+    }
+
+
+    /* ===== MENU ===== */
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px 18px;
+        background-color: #F7EFE9;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== LINKS DO MENU ===== */
+
+    .menu a {
+        font-size: 14px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .menu a:hover {
+        transform: none;
+    }
+
+
+    /* ===== ÍCONES ===== */
+
+    .menu img {
+        width: 25px;
+        height: auto;
+    }
+
+
+    /* ===== PESQUISA ===== */
+
+    .pesquisa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    #btnPesquisa {
+        padding: 0;
+    }
+
+    #btnPesquisa img {
+        width: 27px;
+        height: 27px;
+    }
+
+    #campoPesquisa {
+        width: 150px;
+        max-width: 45vw;
+        height: 34px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== IMAGENS DO SITE ===== */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* ===== BANNERS ===== */
+
+    .banner {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* ===== CONTEÚDO ===== */
+
+    .conteudo {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* ===== CARDS ===== */
+
+    .item {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* ===== MENU DE CATEGORIAS ===== */
+
+    .menu_down {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .item_down {
+        width: 42%;
+    }
+
+    .item_down img {
+        width: 75%;
+        height: auto;
+    }
+
+
+    /* ===== TÍTULOS ===== */
+
+    .titulo_md {
+        font-size: 28px;
+        text-indent: 10px;
+    }
+
+    .titulo_ss {
+        font-size: 36px;
+        text-indent: 0;
+        text-align: center;
+    }
+
+
+    /* ===== TEXTO ===== */
+
+    .par {
+        font-size: 17px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== CARDS DE CATEGORIA ===== */
+
+    .conteiner {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .item_cat {
+        width: 100%;
+        max-width: 300px;
+        height: 430px;
+        box-sizing: border-box;
+    }
+
+    /* Não aumenta o card ao tocar no celular */
+    .item_cat:hover {
+        height: 430px;
+    }
+
+
+    /* ===== RODAPÉ ===== */
+
+    .rodape {
+        width: 100%;
+        padding: 30px 20px 15px;
+        box-sizing: border-box;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .rodape-logo {
+        width: 100%;
+    }
+
+    .rodape-logo img {
+        width: 220px;
+        max-width: 100%;
+    }
+
+    .rodape-final {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+} 
+
     </style>
 </head>
 
 <body class="body">
-
     <header class="header">
-
-        <a href="index02.html">
+    
+    
+        <a href="index.html">
             <img src="img/logo_floricultura-removebg-preview.png" class="logo" alt="Logo">
         </a>
         <nav class="menu">
             <a href="index.html">HOME</a>
             <a href="ocasioes.html">OCASIÕES</a>
-            <a href="">SIGNIFICADO DAS FLORES</a>
-            <a href="">DEPOIMENTOS</a>
-            <a href="">SOBRE NÓS</a>
+            <a href="significado.html">SIGNIFICADO DAS FLORES</a>
+            <a href="testedep.html">DEPOIMENTOS</a>
+            <a href="sobrenos.html">SOBRE NÓS</a>
             <div class="pesquisa">
                 <button id="btnPesquisa" type="button">
                     <img src="img/lupaIcon.png" alt="Pesquisar">
@@ -155,6 +422,15 @@
 
         </nav>
     </header>
+ 
+                   <div class="banner img"> 
+                <img src="img/ocasiõesbanner.png" alt="Flores que transformam momentos em memórias">
+                    
+                 </div>
+                 <br>
+        
+  
+
     <!-- Botão Flutuante do Carrinho -->
     <button id="btn-carrinho-flutuante" class="cart-float-btn" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#carrinhoOffcanvas">
@@ -175,7 +451,7 @@
         <!-- Catálogo de Produtos -->
         <div class="container my-3">
 
-             <h1 class="h1">Buquês em destaque </h1> <hr>
+             <h1 class="h1">Buquês em destaque </h1> 
             <br>
             <!-- Estrutura do Carrossel -->
             <div id="carrosselProdutos" class="carousel slide" data-bs-ride="false">
@@ -363,6 +639,8 @@
             <span>
                 © 2026 Entre Flores Floricultura.
                 Todos os direitos reservados.
+                 <br>
+            Esse site foi feito por estudantes, pode conter erros.
             </span>
 
             <span class="pagamento">
