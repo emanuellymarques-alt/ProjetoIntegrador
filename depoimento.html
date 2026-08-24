@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre Flores</title>
+    <title>Depoimentos</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Bootstrap 5 CSS -->
@@ -238,9 +238,201 @@
             width: 30px;
             height: 30px;
         }
+        /* CARD */
+
+.depoimento-card {
+    border: none;
+    border-radius: 20px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* FOTO OCUPANDO O CARD INTEIRO */
+
+.imagem-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* CAMADA ESCURA SOBRE A FOTO */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+/* CONTEÚDO SOBRE A FOTO */
+
+.conteudo-depoimento {
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+}
+
+
+/* ASPAS */
+
+.aspas {
+    font-size: 35px;
+    color: #E8C6CF;
+}
+
+
+/* TEXTO */
+
+.texto-depoimento {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* LINHA */
+
+.conteudo-depoimento hr {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* CLIENTE */
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* FOTO DO CLIENTE */
+
+.cliente img {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid white;
+}
+
+
+/* INFORMAÇÕES */
+
+.info-cliente h5 {
+    margin: 0;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 18px;
+}
+
+
+.info-cliente span {
+    font-size: 14px;
+}
+
+
+/* ESTRELAS */
+
+.estrelas {
+    color: #E8C6CF;
+    margin-top: 5px;
+}
+.h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        /*CAIXA DE COMENTARIO*/
+
+.caixa-comentario {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+
+    background-color: #ebe3dd;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.caixa-comentario h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.caixa-comentario textarea {
+    width: 50%;
+    padding: 8px;
+
+    display: block;
+    margin: auto;
+
+    border: 1px solid #cc9191;
+    border-radius: 10px;
+
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+   
+}
+
+.caixa-comentario button {
+    margin-top: 15px;
+    padding: 12px 25px;
+
+    background-color: #8B3E4D;
+    color: rgb(243, 238, 238);
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.caixa-comentario button:hover {
+    background-color: #5E7A5A;
+}
+
+#mensagemSucesso {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #5E7A5A;
+    font-weight: bold;
+}
+
     </style>
 </head>
-
+<main>
 <body class="body">
 
     <header class="header">
@@ -265,6 +457,457 @@
 
         </nav>
     </header>
-    
+<br>
+<br>
+    <h1 class="h1">O Que Dizem Sobre Nós</h1>
+
+        <!--LINHA 1ª-->
+
+   <div class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep1.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        Fui muito bem atendida desde o primeiro contato até a entrega.
+                        As flores chegaram lindas e no horário combinado.
+                        Com certeza comprarei mais vezes!
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente1.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Juliana Mendes</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+
+          <!--Card 2-->
+
+        <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep1.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        Entrega e atendimento exelente! As meninas são 
+                        muito compreenivas, com certeza comprei outras vezes.
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente2.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Vinicius Andrade</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+           <!--Card 3 -->
+           <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep1.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        As flores são sempre frescas e os arranjos são feitos
+                        com muito carinho.
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente3.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Mariana Conceição</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+    </div>
+   <!--FIM DA 1ª LINHA-->
+
+    <!--LINHA 2ª-->
+
+    <div class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep2.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        Fui muito bem atendida desde o primeiro contato até a entrega.
+                        As flores chegaram lindas e no horário combinado.
+                        Com certeza comprarei mais vezes!
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente1.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Juliana Mendes</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+
+          <!--Card 2-->
+
+        <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep2.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        Entrega e atendimento exelente! As meninas são 
+                        muito compreenivas, com certeza comprei outras vezes.
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente2.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Vinicius Andrade</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+           <!--Card 3 -->
+           <div class="col-md-4">
+
+            <div class="card depoimento-card card-imagem">
+
+                <!-- FOTO DE FUNDO -->
+                <img src="img/dep2.png"
+                     class="imagem-fundo"
+                     alt="Flores">
+
+                <!-- CAMADA ESCURA -->
+                <div class="overlay"></div>
+
+                <!-- CONTEÚDO DO CARD -->
+                <div class="conteudo-depoimento">
+
+                    <div class="aspas">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="texto-depoimento">
+                        As flores são sempre frescas e os arranjos são feitos
+                        com muito carinho.
+                    </p>
+                    <hr>
+                    <div class="cliente">
+                        <img src="img/cliente3.jpg"
+                             alt="Cliente">
+
+                        <div class="info-cliente">
+
+                            <h5>Mariana Conceição</h5>
+
+                            <span>São Paulo - SP</span>
+
+                            <div class="estrelas">
+                                ★ ★ ★ ★ ★
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--Caixa de mensagem-->
+    <div class="container my-5">
+
+    <div class="caixa-comentario">
+
+        <h1 class="h1">Escreva como foi sua experiência!</h2>
+
+        <textarea
+            id="comentario"
+            placeholder="Conte como foi sua experiência..."
+            rows="5">
+        </textarea>
+
+        <button id="btnEnviar">
+            Enviar comentário
+        </button>
+
+        <p id="mensagemSucesso"></p>
+
+    </div>
+
+</div>
+<script>
+
+const botao = document.getElementById("btnEnviar");
+
+botao.addEventListener("click", function() {
+
+    const comentario = document.getElementById("comentario");
+    const mensagem = document.getElementById("mensagemSucesso");
+
+    if (comentario.value.trim() !== "") {
+
+        mensagem.innerHTML = "✓ Comentário enviado com sucesso!";
+
+        comentario.value = "";
+
+    } else {
+
+        mensagem.innerHTML = "Por favor, escreva um comentário.";
+
+    }
+
+});
+
+</script>
+</main>
+<footer class="rodape">
+
+    <div class="rodape-conteudo">
+
+        <!-- LOGO E REDES SOCIAIS -->
+        <div class="rodape-logo">
+
+            <img src="img/logo_floricultura-removebg-preview.png"
+                 alt="Entre Flores Floricultura">
+
+            <p>
+                Flores que transformam momentos<br>
+                em memórias especiais.
+            </p>
+
+            <div class="redes">
+
+                <a href="https://instagram.com/entreflores_floricultura"
+                   target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/5514997899900"
+                   target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTATO -->
+        <div class="contato-footer">
+
+            <h3>FALE CONOSCO</h3>
+
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                (14) 9978-9900
+            </p>
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                contato@entreflores.com.br
+            </p>
+
+            <p>
+                <i class="fa-regular fa-clock"></i>
+                Seg. à Sex. — 8h às 18h
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- PARTE INFERIOR -->
+    <div class="rodape-final">
+
+        <span>
+            © 2026 Entre Flores Floricultura.
+            Todos os direitos reservados.
+        </span>
+
+        <span class="pagamento">
+            <i class="fa-solid fa-lock"></i>
+            Pagamento seguro
+        </span>
+
+    </div>
+
+</footer>
+<script type="text/javascript" src="script.js"></script>
+<script>
+    // Seleciona os elementos da lupa e do campo de texto
+    const btn = document.getElementById("btnPesquisa");
+    const campo = document.getElementById("campoPesquisa");
+
+    // Faz a lupa abrir e fechar ao clicar
+    if (btn && campo) {
+        btn.onclick = function () {
+            if (campo.style.display === "block") {
+                campo.style.display = "none";
+            } else {
+                campo.style.display = "block";
+                campo.focus();
+            }
+        };
+    }
+
+    // Filtra os cards de significados dinamicamente ao digitar na lupa
+    if (campo) {
+        campo.addEventListener("input", function () {
+            const termoPesquisa = this.value.toLowerCase().trim();
+            // Seleciona todos os blocos de colunas que contêm os cards
+            const cards = document.querySelectorAll(".container .row .col-md-4");
+
+            cards.forEach(card => {
+                // Pega o título da flor (ex: Rosa Vermelha, Girassol)
+                const tituloFlor = card.querySelector(".card-title").textContent.toLowerCase();
+                
+                // Se o título contiver o que foi digitado, mostra o card, senão esconde
+                if (tituloFlor.includes(termoPesquisa)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    }
+</script>
+
 </body>
 </html>

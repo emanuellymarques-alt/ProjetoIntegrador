@@ -31,7 +31,7 @@
         }
 
 .card-produto {
-  background-color: #F7EFE9; <-- cor dos cards!!> 
+  background-color: #e1b9a9; <-- cor dos cards!!> 
   border: none;
   border-radius: 12px;
   max-height: 360px; /* Altura inicial onde o texto fica escondido */
