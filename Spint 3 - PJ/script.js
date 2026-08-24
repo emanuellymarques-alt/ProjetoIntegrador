@@ -3,56 +3,56 @@
 const produtos = [
   {
     id: 1,
-    nome: 'Buquê Doze Razões',
+    nome: 'Doze Razões de Amor',
     preco: 149.90,
     img: 'img/rosa1.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Romance Eterno<br><strong>Itens:</strong> 12 Rosas vermelhas naturais selecionadas, folhagens de eucalipto e laço especial de cetim branco.'
   },
   {
     id: 2,
-    nome: 'Buquê Doce Encanto',
+    nome: 'Doce Encanto',
     preco: 119.90,
     img: 'img/rosa5.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Rosas cor rosa, papel kraft e laço de cetim.'
   },
   {
     id: 3,
-    nome: 'Buquê Paixão Carmesim',
+    nome: 'Paixão Carmesim',
     preco: 95.00,
     img: 'img/rosa3.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> 6 Rosas vermelhas carmesim de botão aberto, folhagem verde e embalagem minimalista.'
   },
   {
     id: 4,
-    nome: 'Buquê Sinfonia de Tons',
+    nome: 'Sinfonia de Tons',
     preco: 160.00,
     img: 'img/rosa4.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Mix de rosas em tons pastéis (rosa bebê, chá e pink), gipsofila e acabamento em seda.'
   },
   {
     id: 5,
-    nome: 'Buquê Raio de Sol',
+    nome: 'Raio de Sol',
     preco: 190,
     img: 'img/test gira1.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sol Dourado<br><strong>Itens:</strong> 12 girassóis naturais selecionados, folhagens de eucalipto e acabamento em papel kraft com laço especial.'
   },
   {
     id: 6,
-    nome: 'Buquê Ametista Imperial',
+    nome: 'Ametista Imperial',
     preco: 119.90,
     img: 'img/lirio4.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Lírios rosas naturais selecionados, folhagens verdes e acabamento refinado.'
   },
   {
     id: 7,
-    nome: 'Buquê Jardim Colorido',
+    nome: 'Jardim Colorido',
     preco: 95.00,
     img: 'img/marga3.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Sentimentos Intensos<br><strong>Itens:</strong> Mix de flores do campo naturais em tons vibrantes (margaridas, crisântemos e pompons), folhagens verdes e acabamento refinado com laço especial.'
   },
   {
     id: 8,
-    nome: 'Buquê Luar de Marfim',
+    nome: 'Luar de Marfim',
     preco: 160.00,
     img: 'img/lirio2.png',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Harmonia e Brisa<br><strong>Itens:</strong> Lírios brancos naturais selecionados, alstroemérias brancas, folhagens verdes, embalagem em papel kraft e acabamento refinado com laço especial de cetim vermelho.'

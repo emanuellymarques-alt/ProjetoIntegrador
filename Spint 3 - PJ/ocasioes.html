@@ -143,11 +143,72 @@
     display: block;
     margin: 0;
 }
-      /* =========================================
+      /* ==
    RESPONSIVIDADE DO SITE
-   ========================================= */
+   ==== */
 
 @media (max-width: 768px) {
+
+
+
+    /* ===== OCASIÕES ===== */
+
+/* TÍTULOS */
+.h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* CONTAINER DOS PRODUTOS */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    min-height: 180px;
+    object-fit: cover;
+}
+
+/* CARROSSEL */
+.carousel {
+    padding: 0 25px;
+}
+
+/* BOTÕES DO CARROSSEL */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10% !important;
+}
+
+/* CARRINHO FLUTUANTE */
+.cart-float-btn {
+    right: 15px;
+    bottom: 15px;
+}
+
+/* OFFCANVAS DO CARRINHO */
+.offcanvas {
+    min-width: 100% !important;
+    width: 100% !important;
+}
+
+/* BOTÕES E INPUTS */
+.input-group {
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.input-group button {
+    width: 100%;
+    margin-top: 8px;
+}
 
     /* ===== PÁGINA ===== */
 
@@ -410,7 +471,7 @@
             <a href="index.html">HOME</a>
             <a href="ocasioes.html">OCASIÕES</a>
             <a href="significado.html">SIGNIFICADO DAS FLORES</a>
-            <a href="testedep.html">DEPOIMENTOS</a>
+            <a href="depoimento.html">DEPOIMENTOS</a>
             <a href="sobrenos.html">SOBRE NÓS</a>
             <div class="pesquisa">
                 <button id="btnPesquisa" type="button">
@@ -451,7 +512,7 @@
         <!-- Catálogo de Produtos -->
         <div class="container my-3">
 
-             <h1 class="h1">Buquês em destaque </h1> 
+             <h1 class="h1">Buquês em destaque </h1> <hr>
             <br>
             <!-- Estrutura do Carrossel -->
             <div id="carrosselProdutos" class="carousel slide" data-bs-ride="false">
