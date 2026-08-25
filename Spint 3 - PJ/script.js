@@ -105,6 +105,7 @@ const produtos2 = [
     img: 'img/cesta7.jpg',
     descricao: '<strong>Marca:</strong> ENTRE FLORES<br><strong>Coleção:</strong> Gestos de Carinho<br><strong>Itens:</strong> Orquídea natural, vinho especial, chocolates selecionados, folhagens ornamentais e cesta decorativa com acabamento refinado.'
   },
+  
   {
     id: 19,
     nome: 'Cesta Brisa Dourada',
@@ -188,7 +189,11 @@ const produtos3 = [
 
 
 
-const todosProdutos = [...produtos];
+const todosProdutos = [
+  ...produtos,
+  ...produtos2,
+  ...produtos3
+];
 let carrinho = [];
 let descontoAtivo = 0;
 let tipoDesconto = '';
@@ -350,13 +355,9 @@ function renderizarProdutos3(lista3 = produtos3) {
 
 // 3. Adicionar item ao carrinho
 function adicionarAoCarrinho(idProduto) {
-  let produtoEncontrado = null;
-  for (let i = 0; i < produtos.length; i++) {
-    if (produtos[i].id === idProduto) {
-      produtoEncontrado = produtos[i];
-      break;
-    }
-  }
+ const produtoEncontrado = todosProdutos.find(
+  produto => produto.id === idProduto
+);
 
   let itemNoCarrinho = null;
   for (let i = 0; i < carrinho.length; i++) {
