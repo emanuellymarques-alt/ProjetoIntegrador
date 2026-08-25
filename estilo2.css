@@ -31,7 +31,7 @@
         }
 
 .card-produto {
-  background-color: #e1b9a9;
+  background-color: #e1b9a9; <-- cor dos cards!!> 
   border: none;
   border-radius: 12px;
   max-height: 360px; /* Altura inicial onde o texto fica escondido */
@@ -52,12 +52,12 @@
 }
 
 .card-produto .card-title {
-  color: #81040a;
+  color: #81040a; <-- letra dos cards!!> 
   font-size: 1.1rem;
 }
 
 .card-produto .preco {
-  color: #81040a;
+  color: #81040a;  <-- letra dos cards!!> 
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -65,15 +65,15 @@
 /* Estilo do texto de descrição da flor */
 .card-produto .descricao {
   font-size: 0.85rem;
-  color: #5c2427;
+  color:#8B3E4d ;
   text-align: left;
   margin-top: 10px;
 }
 
         /* Botões Padrão */
         .btn-ef {
-            background-color: #9d595c;
-            color: #ffffff;
+            background-color: #81040a;
+            color: #F7EFE9;
             border: none;
             border-radius: 20px;
             padding: 8px 18px;
@@ -83,7 +83,7 @@
         }
 
         .btn-ef:hover {
-            background-color: #bb8c8c;
+            background-color: #9d595c;
             color: #ffffff;
         }
 
@@ -107,7 +107,7 @@
         }
 
         .cart-float-btn:hover {
-            background-color: #9d595c;
+            background-color: #F7EFE9;
             color: #ffffff;
             transform: scale(1.08);
         }
